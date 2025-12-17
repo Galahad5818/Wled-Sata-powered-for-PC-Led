@@ -7,49 +7,34 @@ PCB DIY WLED Sata powered           |  Solarized Ocean
  ![IMG_20251211_190525](https://github.com/user-attachments/assets/ce8f3694-5dff-402e-922a-71ee93638b5a) |  ![IMG_20251214_222030](https://github.com/user-attachments/assets/2433ffcc-880a-44a4-bc34-8d50b4247145)
 
 
-## 📌 Présentation
+## Présentation
 
 Ce projet est une **carte électronique custom** conçue pour intégrer proprement **WLED** dans un PC :
 
-- ⚡ Alimentation directe via **connecteur SATA**
-- 🧠 Microcontrôleur : **ESP8266**
-- 🌈 Contrôle de LEDs RGB adressables
+- Alimentation directe via **connecteur SATA**
+- Microcontrôleur : **ESP8266**
+- Contrôle de LEDs RGB adressables
 - 🔌 Connectique pensée pour le PC et les rubans LED
 
 L’objectif est d’obtenir une solution **propre, intégrée et open-source**, inspirée des contrôleurs RGB commerciaux, mais en version **DIY**.
 
-👉 Ce projet vise à **imiter fonctionnellement** la carte suivante (version commerciale) :  
+Ce projet vise à **imiter fonctionnellement** les cartes Nollie comme la carte suivante (version commerciale) :  
 https://fr.aliexpress.com/item/1005008226291294.html
 
 ---
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
-- Alimentation via **SATA PC**
+- Alimentation via **Alimentation SATA de PC**
 - Compatible **WLED**
-- **8 sorties LED indépendantes**, chacune avec son GPIO dédié :
-  - **4 × JST** (rubans LED type WS281x)
-  - **4 × ARGB PC** (compatibles Asus Aura, MSI Mystic Light, etc.)
-- Connecteurs ARGB au **pas 1.27 mm**
-- Répartition intelligente de l’alimentation :
+- **8 sorties LED addressable indépendantes**, chacune avec son GPIO dédié (Les GPIO utilisés sont indiqués directement sur le PCB, à côté de chaque connecteur) :
+  - **4 × JST** (connecteur de rubans LED type WS281x)
+  - **4 × ARGB PC** (compatibles Asus Aura, MSI Mystic Light, etc.) 3 pins au **pas 1.27 mm**
+- Répartition intelligente de l’alimentation SATA:
   - 1 ligne +5V pour les sorties JST
   - 1 ligne +5V dédiée à l’ESP8266
   - 1 ligne +5V pour les autres connecteurs LED
-- Synchronisation RGB avec le PC via **SignalRGB**
-
----
-
-## 🧠 Architecture & logique
-
-- L’ESP8266 est alimenté directement par le SATA
-- Chaque sortie LED possède :
-  - Son propre GPIO
-  - Son alimentation dédiée
-- Les **GPIO utilisés sont indiqués directement sur le PCB**, à côté de chaque connecteur
-- Le firmware **WLED** permet :
-  - Le contrôle réseau
-  - L’intégration SignalRGB
-  - La gestion multi-canaux
+- Grande compatibilité grace à WLED : Synchronisation RGB possible avec le PC via **SignalRGB**, ou **HomeAssistant**, ...
 
 ---
 
@@ -64,31 +49,15 @@ https://fr.aliexpress.com/item/1005008226291294.html
 ### Logiciel
 
 - Installation de **WLED** sur l’ESP8266  
-  👉 De nombreux tutoriels existent déjà (non spécifiques à cette carte)
+  De nombreux tutoriels existent déjà (non spécifiques à cette carte)
 - Aucune configuration spéciale côté firmware :
-  - Les GPIO sont déjà définis sur le PCB
 - Une fois WLED connecté au réseau :
   - **SignalRGB détecte automatiquement WLED**
   - L’ajout du composant est guidé dans le logiciel
 
 ---
 
-## 🧪 Matériel utilisé
-
-La liste complète des composants se trouve dans le dossier **`Composent/`**.
-
-- Microcontrôleur : **ESP8266**
-- Alimentation : **SATA PC**
-- PCB : custom
-- Connecteurs :
-  - JST (WS281x)
-  - ARGB PC (1.27 mm)
-
----
-
 ## 📸 Photos
-
-*(Photos de la carte, du montage et de l’utilisation dans un PC à ajouter ici)*
 
 ---
 
