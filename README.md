@@ -43,7 +43,7 @@ https://fr.aliexpress.com/item/1005008226291294.html
 ### Matériel nécessaire
 
 - Un **fer à souder**
-- Les composants listés dans le dossier `Composent/`
+- Les composants listés dans le dossier `Composant/`
 - Un ESP8266 compatible
 
 ### Logiciel
