@@ -6,6 +6,9 @@ PCB DIY WLED Sata powered           |  Photo de l'utilisation dans mon ordinateu
 :-------------------------:|:-------------------------:
  ![IMG_20251211_190525](https://github.com/user-attachments/assets/ce8f3694-5dff-402e-922a-71ee93638b5a) |  ![IMG_20251214_222030](https://github.com/user-attachments/assets/2433ffcc-880a-44a4-bc34-8d50b4247145)
 
+## Version 2.0 disponible
+Cette version est une amélioration basée sur les recommandations des personnes du chanel Wled de Discord. J'ai donc ajouté un "Levelshifters" comme recommander dans la documentation Wled : https://kno.wled.ge/basics/compatible-hardware/
+
 
 ## Présentation
 
