@@ -23,7 +23,6 @@ Voici la liste des composants que j'ai utilisé, si vous avez des doutes, ou bie
 ![Connecteur SATA](Sata.png)
 
 <br>
----
 <br>
 
 ## Uniquement pour la version 2.0
@@ -40,6 +39,7 @@ Voici la liste des composants que j'ai utilisé, si vous avez des doutes, ou bie
 ### Condensateur C0805 100nF
 [Lien](https://fr.aliexpress.com/item/1106549969.html?spm=a2g0o.cart.0.0.609f38dawn2tLT&mp=1&pdp_npi=6%40dis%21EUR%21EUR%201.17%21EUR%201.17%21%21EUR%201.17%21%21%21%40210384b217699523598475946e78c0%2110000000764785920%21ct%21FR%21912111785%21%211%210%21&gatewayAdapt=glo2fra)
 ![Condensateur](condensateur.png)
+
 
 
 
